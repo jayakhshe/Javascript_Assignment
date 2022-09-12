@@ -1,0 +1,73 @@
+function IsTriangle(a,b,c){
+
+	if ((a == b) && (b == c))
+	{
+		return "Equilateral Triangle"
+	}
+	else if ((a == b || b == c || a == c) && (a != b || b != c || a != c))
+	{
+		return "Isoceles Triangle"
+	}
+	else 
+	{
+		return "Scalene Triangle"	
+	}
+}
+================================================================================
+
+function StudentGrade(mark) 
+{
+	switch (true)
+	{
+		case mark > 90:
+			grade = "S grade";
+			break;
+	
+		case mark > 80:
+			grade = "A grade";
+			break;
+
+		case mark > 70:
+			grade = "B grade";
+			break;
+
+		case mark > 60:
+			grade = "C grade";
+			break;
+
+		case mark > 50:
+			grade = "D grade";
+			break;
+
+		case mark > 40:
+			grade = "E grade";
+			break;
+
+		case mark <= 40:
+			grade = "Student has failed";
+			break;
+		default:
+			grade = "Invalid marks"
+	}
+	return grade;
+}
+
+================================================================================
+let sum  = 0
+let i = 1
+
+for(i=1;i<1000;i++){
+	if ((i % 3 == 0) || (i % 5 == 0)){
+		sum = sum + i
+	
+	}
+
+}
+console.log(sum)
+===================================================================================
+
+
+
+
+
+
