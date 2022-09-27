@@ -1,0 +1,48 @@
+class Cylinder{
+
+    constructor(name) {
+        this.name
+    }
+
+    getvolume(radius,height){
+        return (22/7) * radius * radius * height
+
+    }    
+}
+
+let cylinder1 = new Cylinder()
+console.log((cylinder1.getvolume(9,11)).toFixed(4))
+======================================================================
+
+class Sphere{
+
+    constructor(name) {
+        this.name
+    }
+
+    getvolume(radius){
+        return (4/3) * (22/7) * radius * radius * radius
+
+    }    
+}
+
+let sphere1 = new Sphere()
+console.log((sphere1.getvolume(7)).toFixed(4))
+
+======================================================================
+class Cone{
+
+    constructor(name) {
+        this.name
+    }
+
+    getvolume(radius,height){
+        return (1/3) * (22/7) * radius * radius * height
+
+    }    
+}
+
+let cone1 = new Cone()
+console.log((cone1.getvolume(7,11)).toFixed(4))
+
+================================================================================
