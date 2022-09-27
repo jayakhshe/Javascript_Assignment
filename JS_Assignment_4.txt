@@ -1,0 +1,8 @@
+function matchsticks(n)
+{
+let no_of_matchsticks = 0
+no_of_matchsticks = n * 6 - (n - 1)
+return no_of_matchsticks
+
+}
+console.log(matchsticks(5))
