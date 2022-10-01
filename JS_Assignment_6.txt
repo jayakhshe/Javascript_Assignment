@@ -1,0 +1,35 @@
+class Rectangle{
+
+    constructor(name) {
+        this.name = name
+    }
+
+    area(length,breadth){
+        return (length * breadth)
+
+    }    
+}
+
+class Square extends Rectangle{
+
+    constructor(name){
+        super(name)
+    }
+}
+
+let square1 = new Square()
+console.log((square1.area(4,4)))
+
+=======================================================================================
+function find_largest(num){
+
+const arr = [3,45,6,7,23,5,7,8]
+
+new_arr = arr.sort(function(a,b){return b - a})
+
+return new_arr[num - 1]
+}
+
+console.log(find_largest(3))
+
+==============================================================================================
